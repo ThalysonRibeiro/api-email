@@ -39,6 +39,42 @@ MAIL_PASS=sua-senha-de-app
 MAIL_RECEIVER=email-destino@exemplo.com
 ```
 
+## Estrutura do Projeto
+
+```
+src/
+├── config/
+│   └── mail.js         # Configurações do serviço de e-mail
+├── controllers/
+│   └── emailController.js  # Lógica de controle para envio de e-mails
+├── routes/
+│   ├── emailRoutes.js  # Rotas relacionadas a e-mail
+│   └── index.js        # Arquivo de rotas principal
+├── .env.example        # Exemplo de variáveis de ambiente
+├── .gitignore         # Arquivos e pastas ignorados pelo git
+├── README.md          # Este arquivo
+├── package-lock.json  # Lock file das dependências
+└── package.json       # Configurações e dependências do projeto
+```
+
+### Descrição dos Diretórios
+
+- **config/**: Contém arquivos de configuração
+  - `mail.js`: Configurações do serviço de e-mail (Nodemailer)
+  
+- **controllers/**: Contém a lógica de negócios
+  - `emailController.js`: Gerencia as operações de envio de e-mail
+  
+- **routes/**: Define as rotas da API
+  - `emailRoutes.js`: Rotas específicas para funcionalidades de e-mail
+  - `index.js`: Arquivo principal de rotas
+
+### Arquivos Principais
+
+- **.env.example**: Template para as variáveis de ambiente necessárias
+- **.gitignore**: Lista de arquivos e pastas ignorados pelo git
+- **package.json**: Define as dependências e scripts do projeto
+
 ## Como usar
 
 1. Inicie o servidor
